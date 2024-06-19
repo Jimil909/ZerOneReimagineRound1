@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.hero video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: brightness(0.8);
+}
+
+/* .category::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 7vh;
+  width: 10vw;
+  z-index: -1;
+  border-radius: 50px;
+  background-color: rgba(24, 24, 27);
+} */
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .col {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  overflow: hidden;
+}
+
+.col .item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* filter: brightness(0.7); */
+}
+
+.c-1,
+.c-3 {
+  top: 100%;
+}
+
+.c-1 .item,
+.c-3 .item {
+  top: 100%;
+}
+
+.c-2 .item,
+.c-4 .item {
+  top: -100%;
+}
+
+.vaibhav-2 {
+  animation: fade-in-out 1s infinite;
+}
+
+.jimil-2 {
+  animation: fade-in-out 1s infinite;
+}
+
+@keyframes fade-in-out {
+  0%, 50% {
+    opacity: 1;
+  }
+  50.1%, 100% {
+    opacity: 0;
+  }
+}
